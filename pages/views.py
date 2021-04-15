@@ -6,9 +6,11 @@ from cars.models import cars
 def Home(request):
     teams = Team.objects.all()
     featured_cars = cars.objects.order_by('-created_date').filter(is_featured=True)
+    all_cars = cars.objects.order_by('-created_date')
     data={
         'teams':teams,
         'featured_cars':featured_cars,
+        'all_cars':all_cars,
     }
     return render(request,'templates/pages/home.html',data)
 
