@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import cars
+from .models import Cars
 from django.utils.html import format_html
 # Register your models here.
 
@@ -14,4 +14,4 @@ class Cars_Admin(admin.ModelAdmin):
     search_fields = ('id','car_title','body_style','color','city','fuel_type','year',)
     list_filter = ('body_style','fuel_type','color',)
 
-admin.site.register(cars,Cars_Admin)
+admin.site.register(Cars,Cars_Admin)

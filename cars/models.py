@@ -3,7 +3,7 @@ from datetime import datetime
 from ckeditor.fields import RichTextField
 from multiselectfield import MultiSelectField
 
-class cars(models.Model):
+class Cars(models.Model):
 
     state_choices=(
         ('AL', 'Alabama'),
