@@ -1,6 +1,7 @@
 {% extends 'templates/pages/base.html'%}
 {% load static %}
 
+{%block title%} | Home {%endblock%}
 
 {% block content %}
 {%load humanize%}
@@ -70,7 +71,7 @@
                         {%endfor%}
                     </select>
                 </div>
-                <div class="form-group">  
+                <div class="form-group">
                     <select class="form-control search-fields" name="body_style">
                         <option selected="true" disabled="disabled">Select Type Of Car</option>
 
